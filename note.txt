@@ -1,0 +1,10 @@
+runtime
+js created in 1995
+node js created in 2009
+to write js on the server
+browser engine
+rendering engine -> display ui element
+javascript engine -> run js code 
+chrome -> v8 as js engine 
+
+repl repel mode -> read about print loop
