@@ -1,5 +1,9 @@
-console.log(global.num);
+const {EventEmitter} = require('events'); //import event emitter from events module into node
+const eventEmitter = new EventEmitter();
 
-global.num = "hello";
+eventEmitter.on('lunch', function(){
+    console.log('yum');
+})
 
-console.log(global.num);
+
+eventEmitter.emit('lunch');
