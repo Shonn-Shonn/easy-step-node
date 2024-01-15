@@ -1,9 +1,11 @@
-const {EventEmitter} = require('events'); //import event emitter from events module into node
-const eventEmitter = new EventEmitter();
+const {readFile} = require('fs').promises;
 
-eventEmitter.on('lunch', function(){
-    console.log('yum');
-})
+async function hello(){
+    const file = await readFile('/home/wintphyusinmaung/Documents/easy-step-node/hello.txt ','utf-8');
+    console.log(file);
+} 
 
 
-eventEmitter.emit('lunch');
+hello();
+
+console.log('hello');

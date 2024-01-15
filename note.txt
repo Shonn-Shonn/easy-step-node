@@ -8,3 +8,15 @@ javascript engine -> run js code
 chrome -> v8 as js engine 
 
 repl repel mode -> read about print loop
+default entry point into a node js app is the index.js 
+
+node js vs browser 
+node has built-in file system module called fs
+blocking or non-blocking
+
+evented I/O for V8 javascript
+
+using a non-blocking programming model
+would allow the server to continue
+processing other requests while waiting 
+for the file to be read. 
