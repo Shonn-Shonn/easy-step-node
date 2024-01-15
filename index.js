@@ -1,11 +1,11 @@
 const {readFile} = require('fs').promises;
+const express = require('express');
 
-async function hello(){
-    const file = await readFile('/home/wintphyusinmaung/Documents/easy-step-node/hello.txt ','utf-8');
-    console.log(file);
-} 
+const app = express();
 
+app.get('/', async (request,respond) => {
+    
+    respond.send(await readFile('/home/wintphyusinmaung/Documents/easy-step-node/home.html','utf-8'))
+});
 
-hello();
-
-console.log('hello');
+app.listen(process.env.PORT || 3000, () => console.log(`App avaiable on http://localhost:3000`));

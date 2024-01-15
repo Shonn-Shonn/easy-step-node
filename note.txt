@@ -20,3 +20,12 @@ using a non-blocking programming model
 would allow the server to continue
 processing other requests while waiting 
 for the file to be read. 
+
+common js require()
+es modules import/export
+
+express app allows us to create 
+different urls and endpoints
+
+request => incoming data
+response => outgoing data
