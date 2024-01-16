@@ -5,7 +5,7 @@ to write js on the server
 browser engine
 rendering engine -> display ui element
 javascript engine -> run js code 
-chrome -> v8 as js engine 
+chrome -> v8 as js engine written with c++
 
 repl repel mode -> read about print loop
 default entry point into a node js app is the index.js 
@@ -29,3 +29,8 @@ different urls and endpoints
 
 request => incoming data
 response => outgoing data
+
+expresss js => a node js web application framework
+
+perfect for real time service socket io 
+js engine makes computer understand js
